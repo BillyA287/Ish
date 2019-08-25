@@ -1,0 +1,604 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* ------------------------------------------------------
+---------------------Background video----------------------
+-------------------------------------------------------*/
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+header video {
+    min-width: 100%;
+    min-height: 100%;
+    background: black;
+}
+
+.title {
+    width: 100%;
+    height: 100%;
+    height: 100vh;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.title video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.overlay {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.65;
+}
+
+.logo {
+    z-index: 1;
+}
+
+
+/* ------------------------------------------------------
+---------------------Logo/Title----------------------
+-------------------------------------------------------*/
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title-inset h1 {
+    font-size: 60px;
+    color: white;
+    z-index: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title p {
+    color: white;
+    z-index: 1;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.title-inset {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.main h1 {
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+
+/* ------------------------------------------------------
+---------------------Navbar----------------------
+-------------------------------------------------------*/
+
+nav ul li {
+    top: 0px;
+    right: 60%;
+    list-style-type: none;
+    padding: 15px;
+    border: 1px solid transparent;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.6s ease;
+    display: table-row-group;
+    font-size: 20px;
+}
+
+nav ul :hover {
+    background-color: lightslategray;
+    color: #000;
+}
+
+
+/* ------------------------------------------------------
+---------------------Sticky Navbar----------------------
+-------------------------------------------------------*/
+
+.navbar {
+    background: #201f1fed;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 10px 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 50px;
+    transition: .3s;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar ul {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+/* ------------------------------------------------------
+---------------------Mobile Burger----------------------
+-------------------------------------------------------*/
+
+.mobile-nav-icon {
+    display: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.mobile-nav-icon i {
+    color: #fff;
+}
+
+.mobile-background {
+    max-height: 25em;
+}
+
+
+/* ------------------------------------------------------
+---------------------Button----------------------
+-------------------------------------------------------*/
+
+.button {
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title-inset .btn {
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s ease;
+    border-radius: 7px;
+    z-index: 1;
+    margin-top: 50px;
+}
+
+.btn:hover {
+    background-color: lightslategray;
+    color: #fff;
+}
+
+
+/* ------------------------------------------------------
+---------------------About Section ----------------------
+-------------------------------------------------------*/
+
+.middle1 {
+    margin: auto;
+    background-color: #fff;
+    padding: 15px 15px 30px;
+}
+
+p.Ishmayl-writeup {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.4em;
+    color: #1f1f20;
+}
+
+
+/* ------------------------------------------------------
+---------------------Content Section ----------------------
+-------------------------------------------------------*/
+
+.middle {
+    background-color: #1f1f20;
+    padding: 50px 40px 100px;
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #1f1f20;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.css-grid>div {
+    background: #fff;
+    padding: 1em;
+}
+
+.css-grid>div:nth-child(odd) {
+    background: #fff;
+}
+
+.css-grid {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-gap: 1em;
+    padding: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+}
+
+.content-item-grid {
+    color: #1f1f20;
+    text-align: left;
+}
+
+.content-item {
+    contain: content;
+    border-radius: 5%;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.css-grid .media-info {
+    font-size: 20px;
+}
+
+
+/* ------------------------------------------------------
+---------------------Iframe----------------------
+-------------------------------------------------------*/
+
+.hair-frame {
+    width: 90%;
+    height: 65%;
+}
+
+.dime-frame {
+    width: 100%;
+    height: 90%;
+}
+
+.spoti-frame {
+    width: 250px;
+    height: 100px;
+}
+
+.apple-music {
+    width: 158px;
+    height: 45px;
+    display: inline-block;
+    overflow: hidden;
+    background: url(https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2019-05-10&kind=song&bubble=apple_music)no-repeat;
+}
+
+
+/* ------------------------------------------------------
+---------------------Contact Section ----------------------
+-------------------------------------------------------*/
+
+.bottom {
+    background-color: #fff;
+    margin: auto;
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+    text-align: center;
+}
+
+.contact-info {
+    overflow: hidden;
+    text-align: center;
+    padding: 60px;
+}
+
+.contact-info h3 {
+    text-transform: none;
+    margin-bottom: 60px;
+    color: white;
+    font-size: 70px;
+    padding: 40px;
+}
+
+section .c {
+    font-size: 40px;
+    font-weight: 600;
+    color: #1f1f20;
+    padding: 20px;
+    text-align: center;
+}
+
+.social {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+}
+
+.social i {
+    color: #1f1f20;
+}
+
+.social li {
+    list-style: none;
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    color: #1f1f20;
+}
+
+ul .social {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style-position: initial;
+    color: #1f1f20;
+}
+
+
+/*------------------------------------------------------
+---------------------MEDIA QUERIES----------------------
+-------------------------------------------------------*/
+
+@media screen and (min-width: 1225px) {
+    nav.at-top {
+        display: none;
+    }
+    .navbar ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (max-width: 1224px) {
+    .mobile-nav-icon {
+        display: block;
+        cursor: pointer;
+        width: 100%;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        text-align: right;
+    }
+    .mobile {
+        display: block;
+    }
+    .navbar li {
+        display: block;
+        width: 100%;
+        padding: 20px;
+    }
+    .navbar {
+        padding: 20px;
+        display: block;
+    }
+    .navbar ul {
+        width: 100%;
+        display: none;
+    }
+    .navbar ul li {
+        display: flex;
+        justify-content: center;
+    }
+    nav ul li a {
+        font-size: 25px;
+    }
+    nav li {
+        display: block;
+        width: 100%;
+        padding: 20px;
+    }
+    nav {
+        width: 100%;
+        background: #201f1fce;
+        padding: 20px;
+        display: block;
+    }
+    .header {
+        width: 100%;
+        background-size: contain;
+        background-position: center;
+    }
+    .title video {
+        display: none;
+    }
+    .photo-onlymobile {
+        display: inline;
+    }
+    .title {
+        background: url(../images/mobile.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .middle {
+        background-color: #1f1f20;
+        padding: 0px;
+    }
+    p.Ishmayl-writeup {
+        font-size: 25px;
+    }
+    p.musician {
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+}
+
+.dime {
+    font-size: 3px;
+}
+
+.hatrick {
+    font-size: 3px;
+}
+
+.black-girl-hair {
+    font-size: 3px;
+}
+
+
+/*----------small phones from 0 to 480px------------*/
+
+@media screen and (max-width:480px) {
+    p.musician {
+        font-size: 20px;
+    }
+    .title video {
+        display: none;
+    }
+    .photo-onlymobile {
+        display: inline;
+    }
+    .title {
+        background: url(../images/mobile.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .middle1 h2 {
+        font-size: 45px;
+    }
+    .about-heading {
+        font-size: 5px;
+    }
+    .css-grid>div {
+        background: #fff;
+        padding: 10px;
+    }
+    .css-grid>div:nth-child(odd) {
+        background: #fff;
+    }
+    .css-grid>div:nth-child(2) {
+        background: #fff;
+        padding: 40px;
+    }
+    .css-grid>div:nth-child(3) {
+        background: #fff;
+        padding: 10px;
+    }
+    .css-grid {
+        display: grid;
+        justify-items: center;
+        padding: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    }
+    .dime {
+        font-size: 10px;
+    }
+    .hatrick {
+        font-size: 10px;
+    }
+    .black-girl-hair {
+        font-size: 15px;
+    }
+    .middle {
+        background-color: #1f1f20;
+	}
+	.css-grid .media-info {
+		font-size: 15px;
+	}
+	p {
+		font-size: 15px;
+		
+	}
+}
+
+@media screen and (max-width:380px) {
+    .css-grid>div:nth-child(2) {
+        background: #fff;
+        width: 345px;
+        height: 300px;
+    }
+    .css-grid>div:nth-child(3) {
+        width: 350px;
+    }
+    .title h1 {
+        font-size: 30px;
+    }
+    .middle1 .Ishmayl-writeup {
+        font-size: 20px;
+	}
+	h3 {
+		padding: 30px;
+	}
+}
+
+@media screen and (max-width:325px) {
+    .css-grid>div:nth-child(2) {
+        background: #fff;
+        width: 300px;
+    }
+    .css-grid>div:nth-child(3) {
+        background: #fff;
+        width: 300px;
+    }
+}
+
+
+/*CSS to keep background video centered*/
+
+@media(min-aspect-ratio:16/9) {
+    .header {
+        width: 100%;
+        height: auto;
+    }
+    .header video {
+        width: 100%;
+        height: auto;
+    }
+    @media(max-aspect-ratio:16/9) {
+        .header {
+            width: auto;
+            height: 100%;
+        }
+        .header video {
+            width: auto;
+            height: 100%;
+        }
+    }
+}
